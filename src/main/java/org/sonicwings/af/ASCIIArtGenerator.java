@@ -38,7 +38,7 @@ public class ASCIIArtGenerator {
     }
   }
 
-  public static void main(String[] args) throws Exception {
+  public static void ASCIIArtGenerator(String[] args) throws Exception {
     ASCIIArtGenerator artGen = new ASCIIArtGenerator();
 
     System.out.println();
