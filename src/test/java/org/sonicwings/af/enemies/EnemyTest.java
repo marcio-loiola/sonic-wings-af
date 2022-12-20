@@ -1,4 +1,4 @@
-package org.sonicwings.af;
+package org.sonicwings.af.enemies;
 
 import org.junit.Before;
 import org.sonicwings.af.enemies.Enemy;
@@ -15,8 +15,5 @@ public class EnemyTest {
   public void setUp() throws Exception {
     enemyFactory.createEnemy("bomber");
   }
-
-
-
 
 }

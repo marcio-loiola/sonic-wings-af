@@ -27,7 +27,7 @@ public class BattleCamp {
       return enemy;
     } else {
       System.out.println("No enemy in the camp!");
-      return null;
+      return 0;
     }
   }
 

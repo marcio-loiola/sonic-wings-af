@@ -26,10 +26,8 @@ public class BattleCampTest {
 
     boolean isPlane = false;
 
-    for (Enemy enemy : battleCamp.getEnemy()) {
-      if (enemy.type == "plane") {
-        isPlane = true;
-      }
+    if (enemy.type == "plane") {
+      isPlane = true;
     }
 
     assertTrue(isPlane);
@@ -40,12 +38,28 @@ public class BattleCampTest {
   public void addEathEnemy() {
     enemy = enemyFactory.createEnemy(enemy.type);
     assertEquals("earth", enemy.type);
+
+    boolean isPlane = false;
+
+    if (enemy.type == "earth") {
+      isPlane = true;
+    }
+
+    assertTrue(isPlane);
   }
 
   @Test
   public void addBuildingEnemy() {
     enemy = enemyFactory.createEnemy(enemy.type);
     assertEquals("building", enemy.type);
+
+    boolean isPlane = false;
+
+    if (enemy.type == "building") {
+      isPlane = true;
+    }
+
+    assertTrue(isPlane);
   }
 
   @Test
@@ -54,24 +68,23 @@ public class BattleCampTest {
     assertEquals("naval", enemy.type);
   }
 
-
-
-
-
-
-
-
-
   @Test
   public void removeEnemy() {
+    enemy = enemyFactory.createEnemy(enemy.type);
+    battleCamp.removeEnemy(enemy);
+    assertEquals(null, battleCamp.enemy);
   }
 
   @Test
   public void getEnemy() {
+    enemy = enemyFactory.createEnemy(enemy.type);
+    battleCamp.getEnemy();
+    assertEquals(enemy, battleCamp.enemy);
   }
 
   @Test
   public void getName() {
+
   }
 
   @Test
