@@ -23,24 +23,27 @@ public class ForceCamp3 extends ArmorDecorator {
         return armor.getPrice() + 200;
     }
 
-    @Override
+    public String name() {
+        return "Campo de força 3";
+    }
+
     public String description() {
-        return "";
+        return "Blindagem - 30%";
     }
 
     @Override
     public double armorPts() {
-        return 0;
+        return 0.3;
     }
 
     @Override
     public double attackPts() {
-        return 0;
+        return 0.05;
     }
 
     @Override
     public double price() {
-        return 0;
+        return 150;
     }
 }
 

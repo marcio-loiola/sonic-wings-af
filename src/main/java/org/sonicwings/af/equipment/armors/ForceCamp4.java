@@ -23,6 +23,13 @@ public class ForceCamp4 extends ArmorDecorator {
     return armor.getPrice() + 200;
   }
 
+
+  @Override
+  public String description() {
+    return "Campo de força 4";
+  }
+
+
   @Override
   public double armorPts() {
     return 0;

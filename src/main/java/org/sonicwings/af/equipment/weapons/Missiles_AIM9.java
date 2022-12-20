@@ -24,19 +24,28 @@ public class Missiles_AIM9 extends WeaponDecorator {
     return weapon.getPrice() + 500;
   }
 
+  public String name() {
+    return "Mísseis AIM-9";
+  }
+
+  @Override
+  public String description() {
+    return "Mísseis defensivos AIM-9!";
+  }
+
   @Override
   public double armorPts() {
-    return 0;
+    return 0.2;
   }
 
   @Override
   public double attackPts() {
-    return 0;
+    return 0.40;
   }
 
   @Override
   public double price() {
-    return 0;
+    return 100;
   }
 
 }

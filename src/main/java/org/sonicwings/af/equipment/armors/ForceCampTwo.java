@@ -6,6 +6,11 @@ public class ForceCampTwo extends Armor {
     description = "Campo de força simples e básico";
   }
 
+  @Override
+  public String description() {
+    return "Campo de força 4";
+  }
+
   public double armorPts() {
     return 0.2;
   }

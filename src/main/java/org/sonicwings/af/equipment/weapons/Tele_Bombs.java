@@ -9,7 +9,7 @@ public class Tele_Bombs extends WeaponDecorator {
     }
 
     public String getDescription() {
-        return weapon.getDescription() + ", SUPER BOMBAS TELE GUIADAS!";
+        return weapon.getDescription();
     }
 
     public double getArmorPts() {
@@ -24,19 +24,28 @@ public class Tele_Bombs extends WeaponDecorator {
         return weapon.getPrice() + 500;
     }
 
+    public String name() {
+        return "Bombas Tele Guiadas";
+    }
+
+    @Override
+    public String description() {
+    return "SUPER BOMBAS TELE GUIADAS!";
+    }
+
     @Override
     public double armorPts() {
-        return 0;
+        return 0.05;
     }
 
     @Override
     public double attackPts() {
-        return 0;
+        return 1.00;
     }
 
     @Override
     public double price() {
-        return 0;
+        return 200;
     }
 
 

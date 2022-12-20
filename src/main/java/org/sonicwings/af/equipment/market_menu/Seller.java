@@ -13,19 +13,21 @@ public class Seller {
     Iterator weaponsIterator = weaponsMenu.createIterator();
     Iterator armorIterator = armorMenu.createIterator();
     System.out.println("MENU\n----\n ARMAS");
+    System.out.println(" DP: Defense Points -- AP: Attack Points");
     printMenu(weaponsIterator);
     System.out.println("\n ARMADURAS");
+    System.out.println(" DP: Defense Points -- AP: Attack Points");
     printMenu(armorIterator);
   }
 
   private void printMenu(Iterator iterator) {
     while (iterator.hasNext()) {
       MenuItem menuItem = (MenuItem) iterator.next();
-      System.out.print(menuItem.getName() + ", ");
-      System.out.print(menuItem.getDescription() + " -- ");
-      System.out.println(menuItem.armorPts + " -- ");
-      System.out.println(menuItem.attackPts + " -- ");
-      System.out.println(menuItem.getPrice());
+      System.out.print(menuItem.getName() + ": ");
+      System.out.print(menuItem.getDescription() + "\n");
+      System.out.println(menuItem.armorPts + "DP,");
+      System.out.println(menuItem.attackPts + "AP,");
+      System.out.println(menuItem.getPrice() + "R$");
     }
   }
 

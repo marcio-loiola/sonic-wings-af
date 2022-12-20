@@ -34,11 +34,9 @@ public class ArmorsMenu {
     ForceCamp4 forceCamp4 = new ForceCamp4(localArmor);
     ForceCamp5 forceCamp5 = new ForceCamp5(localArmor);
 
-    addItem(forceCampOne.getName(), forceCampOne.description(), forceCampOne.armorPts(), forceCampOne.attackPts(), forceCampOne.price());
-    addItem(forceCampOne.getName(), forceCampTwo.description(), forceCampTwo.armorPts(), forceCampTwo.attackPts(), forceCampTwo.price());
-    addItem(forceCampOne.getName(), forceCamp3.description(), forceCamp3.armorPts(), forceCamp3.attackPts(), forceCamp3.price());
-    addItem(forceCampOne.getName(), forceCamp4.description(), forceCamp4.armorPts(), forceCamp4.attackPts(), forceCamp4.price());
-    addItem(forceCampOne.getName(), forceCamp5.description(), forceCamp5.armorPts(), forceCamp5.attackPts(), forceCamp5.price());
+    addItem(forceCampOne.name(), forceCampOne.description(), forceCampOne.armorPts(), forceCampOne.attackPts(), forceCampOne.price());
+    addItem(forceCamp3.name(), forceCamp3.description(), forceCamp3.armorPts(), forceCamp3.attackPts(), forceCamp3.price());
+    addItem(forceCamp5.name(), forceCamp5.description(), forceCamp5.armorPts(), forceCamp5.attackPts(), forceCamp5.price());
   }
 
   public void addItem(String name, String description, double armorPts, double attackPts, double price) {

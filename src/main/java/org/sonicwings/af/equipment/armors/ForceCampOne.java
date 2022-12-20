@@ -2,12 +2,12 @@ package org.sonicwings.af.equipment.armors;
 
 public class ForceCampOne extends Armor {
 
-  public ForceCampOne() {
-    description = "Campo de força simples e básico";
+  public String name() {
+    return "Campo de força 1";
   }
 
   public String description() {
-    return "Blindagem 1";
+    return "Blindagem - 10%";
   }
 
   public double armorPts() {
@@ -19,6 +19,6 @@ public class ForceCampOne extends Armor {
   }
 
   public double price() {
-    return 100;
+    return 50;
   }
 }

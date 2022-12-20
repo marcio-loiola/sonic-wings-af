@@ -3,7 +3,7 @@ package org.sonicwings.af.equipment.market_menu;
 import java.util.ArrayList;
 
 public class WeaponsMenuIterator implements Iterator {
-    MenuItem[] menuItems;
+    ArrayList menuItems;
 
     int position = 0;
 
@@ -12,16 +12,19 @@ public class WeaponsMenuIterator implements Iterator {
     }
 
     public Object next() {
-        MenuItem menuItem = this.menuItems[position];
+        MenuItem menuItem = (MenuItem) menuItems.get(position);
         position = position + 1;
         return menuItem;
     }
 
     public boolean hasNext() {
-        if (position >= menuItems.length || menuItems[position] == null) {
+        if (position >= menuItems.size() || menuItems.get(position) == null) {
             return false;
         } else {
             return true;
         }
     }
+
 }
+
+

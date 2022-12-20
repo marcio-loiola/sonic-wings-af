@@ -2,7 +2,7 @@ package org.sonicwings.af.equipment.armors;
 
 public abstract class Armor {
   int cod;
-  String name;
+  public String name;
   public String description;
   double attackPts;
   double armorPts;
@@ -31,6 +31,8 @@ public abstract class Armor {
   public double getPrice() {
     return price;
   }
+
+
 
   public abstract String description();
 
