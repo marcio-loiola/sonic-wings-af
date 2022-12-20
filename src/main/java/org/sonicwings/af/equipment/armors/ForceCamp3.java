@@ -24,6 +24,11 @@ public class ForceCamp3 extends ArmorDecorator {
     }
 
     @Override
+    public String description() {
+        return "";
+    }
+
+    @Override
     public double armorPts() {
         return 0;
     }

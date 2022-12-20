@@ -9,6 +9,11 @@ public class WeaponsMenu {
   public WeaponsMenu() {
     menuItems = new ArrayList();
     Weapon localWeapon = new Weapon() {
+
+      @Override
+      public String description() {
+        return "";
+      }
       @Override
       public double armorPts() {
         return 0;
@@ -46,9 +51,8 @@ public class WeaponsMenu {
     menuItems.add(menuItem);
   }
 
-  public ArrayList getMenuItems() {
-    return menuItems;
+  public Iterator createIterator() {
+    return new WeaponsMenuIterator(menuItems);
   }
-
 
 }

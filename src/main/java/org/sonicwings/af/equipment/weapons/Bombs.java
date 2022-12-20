@@ -25,6 +25,11 @@ public class Bombs extends WeaponDecorator {
   }
 
   @Override
+  public String description() {
+    return "";
+  }
+
+  @Override
   public double armorPts() {
     return 0;
   }

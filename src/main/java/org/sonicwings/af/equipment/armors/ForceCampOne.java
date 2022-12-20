@@ -6,6 +6,10 @@ public class ForceCampOne extends Armor {
     description = "Campo de força simples e básico";
   }
 
+  public String description() {
+    return "Blindagem 1";
+  }
+
   public double armorPts() {
     return 0.1;
   }
