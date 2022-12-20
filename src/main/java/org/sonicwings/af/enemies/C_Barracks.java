@@ -7,7 +7,7 @@ public class C_Barracks extends Enemy {
         this.name = "C_Building";
         this.Health = 200.0;
         this.FirePower = 150.0;
-        this.ArmorPts = 200.0;
+        this.DefensePts = 200.0;
     }
 
     public void attack() {

@@ -7,7 +7,7 @@ public class T_Artillery extends Enemy {
         this.name = "T_Artillery";
         this.Health = 100.0;
         this.FirePower = 100.0;
-        this.ArmorPts = 100.0;
+        this.DefensePts = 100.0;
     }
 
     public void attack() {

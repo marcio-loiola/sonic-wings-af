@@ -7,7 +7,7 @@ public class C_Building extends Enemy {
         this.name = "C_Building";
         this.Health = 100.0;
         this.FirePower = 100.0;
-        this.ArmorPts = 100.0;
+        this.DefensePts = 100.0;
     }
 
     public void attack() {

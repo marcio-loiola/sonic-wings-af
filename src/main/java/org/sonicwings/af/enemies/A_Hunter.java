@@ -8,7 +8,7 @@ public class A_Hunter extends Enemy {
     this.name = "A_Hunter";
     this.Health = 200.0;
     this.FirePower = 150.0;
-    this.ArmorPts = 120.0;
+    this.DefensePts = 120.0;
   }
 
   public void attack() {

@@ -8,7 +8,7 @@ public class A_Finder extends Enemy {
         this.name = "A_Searcher";
         this.Health = 50.0;
         this.FirePower = 50.0;
-        this.ArmorPts = 50.0;
+        this.DefensePts = 50.0;
     }
 
     public void attack() {

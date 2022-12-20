@@ -7,7 +7,7 @@ public class Enemy {
 
     public Double Health;
     public Double FirePower;
-    public Double ArmorPts;
+    public Double DefensePts;
 
 
     public Enemy (String type) {

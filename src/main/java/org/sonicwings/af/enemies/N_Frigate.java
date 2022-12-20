@@ -7,7 +7,7 @@ public class N_Frigate extends Enemy {
         this.name = "N_Frigate";
         this.Health = 200.0;
         this.FirePower = 150.0;
-        this.ArmorPts = 120.0;
+        this.DefensePts = 120.0;
     }
 
     public void attack() {
