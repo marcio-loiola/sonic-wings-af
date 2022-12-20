@@ -1,4 +1,4 @@
-package org.sonicwings.af.equipment;
+package org.sonicwings.af.equipment.armors;
 
 public abstract class Armor {
   int cod;

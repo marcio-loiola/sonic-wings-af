@@ -1,13 +1,13 @@
-package org.sonicwings.af.equipment;
+package org.sonicwings.af.equipment.armors;
 
-public class ForceCampTwo extends Armor {
+public class ForceCampOne extends Armor {
 
-  public ForceCampTwo() {
+  public ForceCampOne() {
     description = "Campo de força simples e básico";
   }
 
   public double armorPts() {
-    return 0.2;
+    return 0.1;
   }
 
   public double attackPts() {
@@ -15,6 +15,6 @@ public class ForceCampTwo extends Armor {
   }
 
   public double price() {
-    return 150;
+    return 100;
   }
 }

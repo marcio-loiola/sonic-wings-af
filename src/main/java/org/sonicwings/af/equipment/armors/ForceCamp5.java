@@ -1,4 +1,4 @@
-package org.sonicwings.af.equipment;
+package org.sonicwings.af.equipment.armors;
 
 public class ForceCamp5 extends ArmorDecorator {
   Armor armor;
