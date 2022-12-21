@@ -1,8 +1,8 @@
 package org.sonicwings.af.enemies;
 
 public class T_Tank extends Enemy {
-    public T_Tank() {
-        super("EarthEnemy");
+    public T_Tank(String type) {
+        super(type);
         this.cod = 0;
         this.name = "T_Tank";
         this.Health = 100.0;

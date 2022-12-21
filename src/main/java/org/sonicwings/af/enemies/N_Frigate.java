@@ -1,8 +1,8 @@
 package org.sonicwings.af.enemies;
 
 public class N_Frigate extends Enemy {
-    public N_Frigate() {
-        super("NavalEnemy");
+    public N_Frigate(String type) {
+        super(type);
         this.cod = 1;
         this.name = "N_Frigate";
         this.Health = 200.0;

@@ -8,7 +8,6 @@ import org.sonicwings.af.enemies.EnemyFactory;
 import static org.junit.Assert.*;
 
 public class BattleCampTest {
-
   Enemy enemy;
   EnemyFactory enemyFactory;
 
@@ -20,9 +19,13 @@ public class BattleCampTest {
   }
 
   @Test
-  public void addPlaneEnemy() {
+  public void addPlaneEnemyByType() {
+
+    /* Given */
     enemy = enemyFactory.createEnemy(enemy.type);
     assertEquals("plane", enemy.type);
+
+    /* When */
 
     boolean isPlane = false;
 
@@ -30,57 +33,96 @@ public class BattleCampTest {
       isPlane = true;
     }
 
-    assertTrue(isPlane);
+    /* Then */
 
+    assertTrue(isPlane);
   }
 
   @Test
-  public void addEathEnemy() {
+  public void addEathEnemyByType() {
+
+    /* Given */
     enemy = enemyFactory.createEnemy(enemy.type);
     assertEquals("earth", enemy.type);
 
+    /* When */
     boolean isPlane = false;
 
     if (enemy.type == "earth") {
       isPlane = true;
     }
 
+    /* Then */
     assertTrue(isPlane);
   }
 
   @Test
-  public void addBuildingEnemy() {
+  public void addBuildingEnemyByType() {
+    /* Given */
     enemy = enemyFactory.createEnemy(enemy.type);
     assertEquals("building", enemy.type);
 
-    boolean isPlane = false;
+    boolean isEarth = false;
+
+    /* When */
 
     if (enemy.type == "building") {
-      isPlane = true;
+      isEarth = true;
     }
 
-    assertTrue(isPlane);
+    /* Then */
+    assertTrue(isEarth);
   }
 
   @Test
   public void addNavalEnemy() {
+
+    /* Given */
     enemy = enemyFactory.createEnemy(enemy.type);
     assertEquals("naval", enemy.type);
+
+    /* When */
+    
+    boolean isNaval = false;
+    
+    if (enemy.type == "naval") {
+      isNaval = true;
+    }
+    
+    /* Then */
+    assertTrue(isNaval);
   }
 
   @Test
   public void removeEnemy() {
+    /* Given */
     enemy = enemyFactory.createEnemy(enemy.type);
+
+    /* When */
     battleCamp.removeEnemy(enemy);
+
+    /* Then */
     assertEquals(null, battleCamp.enemy);
   }
 
   @Test
   public void getEnemy() {
+    /* Given */
     enemy = enemyFactory.createEnemy(enemy.type);
+
+    /* When */
     battleCamp.getEnemy();
+
+    /* Then */
     assertEquals(enemy, battleCamp.enemy);
   }
+
+  @Test
+  void test(){
+    fail("The method is doesn't work properly!");
+  }
+
+
 
   @Test
   public void getName() {

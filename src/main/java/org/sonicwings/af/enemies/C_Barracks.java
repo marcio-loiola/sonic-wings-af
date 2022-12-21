@@ -1,8 +1,8 @@
 package org.sonicwings.af.enemies;
 
 public class C_Barracks extends Enemy {
-    public C_Barracks() {
-        super("BuildingEnemy");
+    public C_Barracks(String type) {
+        super(type);
         this.cod = 1;
         this.name = "C_Building";
         this.Health = 200.0;

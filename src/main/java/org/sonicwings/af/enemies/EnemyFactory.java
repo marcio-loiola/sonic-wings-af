@@ -8,11 +8,11 @@ public class EnemyFactory {
       case "plane":
         return new A_Bomber(type);
       case "building":
-        return new C_Barracks();
+        return new C_Barracks(type);
       case "earth":
-        return new T_Tank();
+        return new T_Tank(type);
       case "naval":
-        return new N_Frigate();
+        return new N_Frigate(type);
       default:
         break;
     }

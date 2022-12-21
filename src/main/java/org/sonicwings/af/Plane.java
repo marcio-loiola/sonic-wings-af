@@ -24,7 +24,9 @@ public class Plane {
     this.Hability = Hability;
   }
 
-
+  public void attack() {
+    System.out.println("Player 1 attacks!");
+  }
 
 
 }
